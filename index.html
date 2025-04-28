@@ -1,105 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cricket Scorecard Animation using jQuery and Ajax</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        #scorecard {
-            width: 300px;
-            border: 2px solid #333;
-            padding: 15px;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-        }
-        #scorecard h2 {
-            text-align: center;
-            margin-bottom: 15px;
-        }
-        .score-item {
-            font-size: 1.2em;
-            margin: 10px 0;
-            padding: 8px;
-            border-radius: 5px;
-            background-color: #e3e3e3;
-            display: none;
-        }
-        .highlight {
-            background-color: #90ee90 !important;
-            transition: background-color 1s ease;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <div id="scorecard">
-        <h2>Cricket Scorecard</h2>
-        <div id="runs" class="score-item">Runs: 0</div>
-        <div id="wickets" class="score-item">Wickets: 0</div>
-        <div id="overs" class="score-item">Overs: 0.0</div>
+    <script src="script.js" ></script>
+    <h1 style="align-items: center;text-align: center;">Calculator</h1>
+    <div>
+        <h3>Enter num 1:</h3>
+        <input type="text" id="num1" />
+        <h3>Enter num 2:</h3>
+        <input type="text" id="num2"/> <br><br>
+        <h3>Result:</h3>
+        <input type="text" id="result" />
+
+        <input typr="button" value="Addition" onclick="addNumber()" style="text-align:center">
+    
     </div>
-
-    <script>
-        $(document).ready(function () {
-            // Initially show the score items with fadeIn animation
-            $(".score-item").each(function (index) {
-                $(this).delay(index * 300).fadeIn(600);
-            });
-
-            // Mock cricket score data to simulate Ajax responses
-            const scoreUpdates = [
-                { runs: 5, wickets: 0, overs: 0.5 },
-                { runs: 12, wickets: 1, overs: 1.2 },
-                { runs: 20, wickets: 1, overs: 2.0 },
-                { runs: 28, wickets: 2, overs: 3.1 },
-                { runs: 35, wickets: 2, overs: 4.0 },
-                { runs: 42, wickets: 3, overs: 5.0 },
-                { runs: 50, wickets: 3, overs: 6.0 },
-                { runs: 58, wickets: 4, overs: 7.0 },
-                { runs: 65, wickets: 4, overs: 8.0 },
-                { runs: 72, wickets: 5, overs: 9.0 },
-                { runs: 80, wickets: 5, overs: 10.0 }
-            ];
-
-            let currentIndex = 0;
-
-            function updateScore() {
-                if (currentIndex >= scoreUpdates.length) {
-                    return; // Stop updates when all data shown
-                }
-
-                // Simulate Ajax call with setTimeout
-                setTimeout(function () {
-                    const score = scoreUpdates[currentIndex];
-
-                    // Animate runs update
-                    $("#runs").fadeOut(300, function () {
-                        $(this).text("Runs: " + score.runs).fadeIn(300).addClass("highlight");
-                        setTimeout(() => $(this).removeClass("highlight"), 1000);
-                    });
-
-                    // Animate wickets update
-                    $("#wickets").fadeOut(300, function () {
-                        $(this).text("Wickets: " + score.wickets).fadeIn(300).addClass("highlight");
-                        setTimeout(() => $(this).removeClass("highlight"), 1000);
-                    });
-
-                    // Animate overs update
-                    $("#overs").fadeOut(300, function () {
-                        $(this).text("Overs: " + score.overs.toFixed(1)).fadeIn(300).addClass("highlight");
-                        setTimeout(() => $(this).removeClass("highlight"), 1000);
-                    });
-
-                    currentIndex++;
-                    updateScore(); // Recursive call for next update
-                }, 2000); // 2 seconds delay to simulate Ajax fetch interval
-            }
-
-            updateScore();
-        });
-    </script>
+    
 </body>
+</html>
