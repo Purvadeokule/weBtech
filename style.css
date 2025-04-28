@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("images/space.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+#startBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#raceTrack {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    border: 1px solid #000;
+}
+
+.astro-animation {
+    width: 100px;
+    height: 100px;
+    background-image: url("images/astro.jpg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.ship-animation {
+    width: 100px;
+    height: 100px;
+    background-image: url("images/ship.jpg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 170px;
+    left: 0;
+}
