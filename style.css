@@ -1,37 +1,89 @@
-/* Carousel container styling */
 *{
 	box-sizing:border-box;
+}
+.row{
+	display:inline-flex;
+
+}
+.col-12{
+	width:100%;
 }
 body{
 	margin:0px;
 	padding:0px;
 	font-family: 'Titillium Web', sans-serif;
 }
-
-.container{
-    width:100%;
-    padding: 10px;
+.header>img{
+	display: block;
 }
-
-#events {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.logo{
+	padding:25px 25px 80px 125px;
+	float: left;
+    height: 50px;
+   /* padding: 15px 15px;*/
+    font-size: 18px;
+    line-height: 20px
 }
-.slide-title{
-    font-size: 24px;
-    background-color: #fecc00;
-    color: #800000;
+img{
+	vertical-align: middle;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #events {
-        max-width: 100%;
-        padding: 10px;
-    }
-    
-    .carousel-item img {
-        height: 300px;
-    }
+.nametxt{
+	width: 345;
+	border-left: 1px solid #fecc00;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	color:#fecc00;
+}
+#name{
+	font-weight: 700;
+    font-size: 17px;
+}
+li{
+	list-style-type: none !important;
+}
+.menu-about{
+	padding: 10px;
+	background-color: beige;
+}
+.vision-mission{
+	background-color: #2b0318;
+	color:beige;
+	padding: 50px;
+}
+.chairman-message{
+	padding: 50px;
+	background-color: beige;
+	color:#2b0318;
+}
+img{
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 5px;
+	float: right;
+}
+.msg{
+	width: 100%;
+	border-left: 1px solid #2b0318;
+	padding-left: 10px;
+	float: left;
+}
+.mission{
+	width: 100%;
+	border-left: 1px solid #fecc00;
+	padding-left: 10px;
+	float: left;
+}
+.vision{
+	width: 100%;
+	border-left: 1px solid #fecc00;
+	padding-left: 10px;
+	float: left;
+}
+.image-media{
+	background: #fecc00;
+    width: 261px;
+    height: 261px;
+	float:right;
 }
