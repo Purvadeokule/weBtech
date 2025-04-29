@@ -1,113 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>DKTE home</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Registration</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+        div.form-group {
+            margin-bottom: 1em;
+        }
+        label {
+            margin-bottom: .5em;
+            color: #333333;
+            display: block;
+        }
+        input, select {
+            border: 1px solid #CCCCCC;
+            padding: .5em;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 0.7em;
+            font-size: 1em;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
 <body>
-	<div class="navbar" style="background-color:#2b0318">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<nav class="header">
-						<a class="logo">
-							<img src="img/dkte-logo.png">
-						</a>
-						<ul class="nametxt">
-							<li><span id="name" style="color:#fecc00"><b>D.K.T.E. SOCIETY'S TEXTILE & ENGINEERING <br>INSTITUTE</b></span>
-								<br>
-								PO BOX130 RAJWADA ICHALKARANJI <br>MAHARASHTRA 416115 India.
-							</li>
-							<li Style="color:#fecc00">An Empowered Autonomous Institute
-								<br>
-							   Affiliated to Shivaji University, Kolhapur
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="menu-about">
-		<div class="container">
-			<h1 style="font-size: 24px; text-align: center;">
-				<span style="color: #800000; font-size: 24pt;">
-					<strong>D.K.T.E. Society's Textile & Engineering Institute</strong>
-				</span>
-				<br>
-				<span style="font-size: 12pt;">
-					An Empowered Autonomous Institute
-					<br>Affiliated to Shivaji University, Kolhapur.
-				</span>
-			</h1>
-			<p>
-				DKTE’s Textile & Engineering Institute, Ichalkaranji enjoys a unique and prominent place amongst the Engineering colleges that are engaged in education, training, research, and consultancy in
 
-various disciplines of engineering. DKTE has been founded in 1982. Institute has been catering to Diploma, Graduate, Post-Graduate, and Doctorate programs in Textile, Electronics &
+<h2 style="text-align:center;">Student Exam Registration Form</h2>
 
-Telecommunication Engineering, Mechanical Engineering, Computer Science &  Engineering, Artificial Intelligence and Data Science, Electrical Engineering, Civil Engineering, and Management
+<form method="post" action="validate.php">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" >
+    </div>
 
-Studies (MBA). We have around 4000 students and 215 faculty members.
-			</p>
-			<br>
-			<p>
-				Institute was started in the year 1982 and is the First Institute in the state of Maharashtra started on a no-grant basis. The Institute has achieved remarkable milestones and glorious
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" >
+    </div>
 
-achievements, a few of them -
-			<br>
-		    </p>
-			<span style="font-size: 12pt;">
-				<p>1. The institute is running, 3 Diploma, 12 UG, 06 PG, and 04 Ph.D. programs.</p>
-				<p>2. Received autonomy in 2016 and we received Empowered Autonomy from Shivaji University in 2023.</p>
-				<p>3. Institute is NAAC accredited with A+ Grade consequently for two cycles.</p>
-				<p>4. Institute’s almost all programs are NBA accredited. One of the programs has received 6 years of accreditation. In western Maharashtra, ours is the only Institute that got 6 years of accreditation.</p>
-				<p>5. For the last three years consecutively the Institute has been figured in NIRF innovation Ranking at the National level.</p>
-				<p>6. The institute has emerged as the Winner of ‘Best Industry-Linked Engineering Institute”- three times (in year 2015,2017,2021) in the nationwide survey conducted jointly by AICTE and CII.</p>
-				<p>7. The institute has been awarded many prestigious funding projects from Govt. of India, amounting Rs 60 Cr+</p>
-				<p>8. The institute has signed MoUs with 29 Foreign Universities and 100+ industries, which indicates a very good Industry liaison.</p>
-				<p>9. Institute has been identified to act as a “Mentor Institution” under AICTE’s Margdarshak Scheme and also as a “Potential Mentor” by UGC under PARAMARSH scheme to promote Quality and Accreditation under UGC.</p>
-			</span>
-		</div>
-	</div>
-	<div class="vision-mission">
-		<div class="container">
-			<div class="row">
-			  <div class="col-sm-6">
-				<div class="vision">
-					<h4 style="color:#fecc00">Vision</h4>
-					<p>To be one of the leading institutes by integrating learning, research, and entrepreneurship into holistic education, fostering innovative solutions for industrial and societal challenges utilizing state-of-the-art technology.</p>
-				</div>
-			  </div>
-			  <div class="col-sm-6">
-				<div class="mission">
-					<h4 style="color:#fecc00">Mission</h4>
-				<p>M1: To enhance academic standards by integrating technological advancements into the curriculum, pedagogy and assessment.</p>
-				<p>M2: To facilitate research and innovation by providing a holistic and conducive learning environment.</p>
-				<p>M3: To develop industry ready graduates having concern for society and environment, imbibed with ethical behaviour and equipped with professional skills and entrepreneurship abilities by enhancing collaboration with industries, academic and research institutes.</p>
-				</div>
-			  </div>
-			</div>
-		</div>
-	</div>
-	<div class="chairman-message">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<div class="image-media">
-						<strong style="color:#800000">HON. SHRI K. B. AWADE </strong>
-						<img src="img/dada_chairman.jpg" width="100%">
-					</div>
-				</div>
-				<div class="col-sm-7">
-					<div class="msg">
-						<h4 style="color: #800000; font-size: 24pt;">Chairman's Message</h4>
-				  		<p>I extend a very hearty welcome to all of you. I am very happy to note that a small sapling planted in 1982 has grown into a huge banyan tree. It has been a hugely satisfying journey. I applaud the sincere efforts of all the faculty and staff that have put in endless hours of toil to achieve this. But, this is definitely not the end. I want this institute to grow even more and create engineers capable of taking on the new challenges of today. Educational Institutes have a critical role in providing the students with all the necessary inputs required to make them global citizens. In today’s advanced world, Institutes are more of a facilitator of knowledge than just a provider of knowledge. Students need to be given all the knowledge, skills and ability so that they are able to appreciate the changes happening in society and adapt to them. It will be my endeavor, to ensure that this institute remains always relevant.</p>
-					</div>
-				</div>
-			  </div>
-		</div>
-	</div>
+    <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" >
+    </div>
+
+    <div class="form-group">
+        <label for="exam">Select Exam:</label>
+        <select id="exam" name="exam">
+            <option value="">--Select--</option>
+            <option value="Math">Math</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+        </select>
+    </div>
+
+    <input type="submit" value="Register">
+</form>
+
 </body>
 </html>
